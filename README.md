@@ -11,8 +11,8 @@ than the MLP mentioned in the papers, outperforming on both accuracy and +/- 1 a
 
 **Problem Generator: Variational Autoencoder (VAE)**
 
-Additionally, I implemented a Variational Autoencoder (VAE) capable of generating climbing problems, with the ability to tweak the number of holds included in each problem. This was done by treating the generated "board" as a probabalistic map of holds, and creating a board based on the top x number of holds in a given board map. This approach enriches the Moonboard experience by generating diverse and engaging climbs.
-Repository Structure
+Additionally, I implemented a Variational Autoencoder (VAE) capable of generating climbing problems, with the ability to tweak the number of holds included in each problem. This was done by treating the generated "board" as a probabalistic map of holds, and creating a board based on the top x number of holds in a given board map. This approach enriches the Moonboard experience by generating diverse and engaging climbs.   
+**Repository Structure**
 
     grade_classifier.ipynb: Contains the implementation of the Multi-Layer Perceptron (MLP) model for route classification.   
     VAE-route-gen.ipynb: Includes the code for the Variational Autoencoder (VAE) used to generate climbing problems.   
