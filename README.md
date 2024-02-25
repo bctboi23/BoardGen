@@ -9,7 +9,7 @@ I developed a simple Multi-Layer Perceptron (MLP) model, leveraging extensive pr
 as well as surpassing the human benchmark for route classification. The above claim is made from the results described in the papers here: (https://cs230.stanford.edu/projects_spring_2020/reports/38850664.pdf) and here: (https://arxiv.org/pdf/2311.12419.pdf). Interestingly, this MLP performs significantly better
 than the MLP mentioned in the papers, outperforming on both accuracy and +/- 1 accuracy (sadly, no F1 score was mentioned, and since the dataset is imbalanced accuracy doesn't mean much).   
 
-**Conditional Variational Autoencoder (VAE)**
+**Problem Generator: Variational Autoencoder (VAE)**
 
 Additionally, I implemented a Variational Autoencoder (VAE) capable of generating climbing problems, with the ability to tweak the number of holds included in each problem. This was done by treating the generated "board" as a probabalistic map of holds, and creating a board based on the top x number of holds in a given board map. This approach enriches the Moonboard experience by generating diverse and engaging climbs.
 Repository Structure
