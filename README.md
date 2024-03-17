@@ -7,7 +7,8 @@ BoardGen is a project focused on addressing the challenges of classifying and ge
 
 I developed a simple Multi-Layer Perceptron (MLP) model, leveraging extensive preprocessing techniques and dataset understanding. Surprisingly, the MLP model outperformed sophisticated deep learning models, including complex Convolutional Neural Networks (CNNs) and Long Short-Term Memory networks (LSTMs), 
 as well as surpassing the human benchmark for route classification. The above claim is made from the results described in the papers here: (https://cs230.stanford.edu/projects_spring_2020/reports/38850664.pdf) and here: (https://arxiv.org/pdf/2311.12419.pdf). Interestingly, this MLP performs significantly better
-than the MLP mentioned in the papers, outperforming on both accuracy and +/- 1 accuracy (sadly, no F1 score was mentioned, and since the dataset is imbalanced accuracy doesn't mean much). It still struggles on grades above V8, since the examples there are very limited, but overall performance is the best that I could find online  
+than the MLP mentioned in the papers, outperforming on both accuracy (~50%) and +/- 1 accuracy (~90%) (sadly, no F1 score was mentioned, and since the dataset is imbalanced accuracy doesn't mean much). It still struggles on grades above V8, since the examples there are very limited, but overall performance is the best that I could find online.  
+The classifier was then built into an ONXX compatible network, hosted on a web application using fly at https://moonboard-grade-predict.fly.dev/
 
 **Problem Generator: Variational Autoencoder (VAE)**
 
