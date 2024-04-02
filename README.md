@@ -13,9 +13,9 @@ Additionally, due to the way I constructed the data, assuming the moonboard as a
 
 | Model             | Exact Acc. | +-1 Acc. | Macro F1 Score | Weighted F1 Score |
 | :---------------: | :--------: | :------: | :------------: | :----------------:
-| MLP               |  53.12%    | 92.23%   | 0.3799         | 0.5457
-| Simple CNN        |  54.35%    | **93.36%** | 0.3992       | 0.5574
-| ResNet            |**58.36%**  | 92.81%   | **0.4311**     | **0.5778**
+| MLP               |  55.61%    | 91.55%   | 0.4020         | 0.5617
+| Simple CNN        |  55.36%    | **93.24%** | 0.3875       | 0.5646
+| ResNet            |**59.85%**  | 92.20%   | **0.4228**     | **0.5908**
 
 **Problem Generator: Variational Autoencoder (VAE)**
 
