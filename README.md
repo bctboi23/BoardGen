@@ -29,10 +29,11 @@ Usage
 Requirements
 
     Python 3.x
-    TensorFlow
+    PyTorch
     NumPy
     Pandas
     Matplotlib
+    Sklearn
 
 Contribution
 
