@@ -7,13 +7,13 @@ BoardGen is a project focused on addressing the challenges of classifying and ge
 
 I developed a simple Multi-Layer Perceptron (MLP) model, leveraging extensive preprocessing techniques and dataset understanding, along with the implementation of CORAL-style ordinal regression ideas. Surprisingly, the MLP model outperformed the sophisticated deep learning models found online, including complex Convolutional Neural Networks (CNNs) and Long Short-Term Memory networks (LSTMs),  as well as surpassing the human benchmark for route classification. The above claim is made from the results described in the papers here: (https://cs230.stanford.edu/projects_spring_2020/reports/38850664.pdf) and here: (https://arxiv.org/pdf/2311.12419.pdf). Interestingly, this MLP performs significantly better than the MLP mentioned in the papers, outperforming on both accuracy (~50%) and +/- 1 accuracy (~90%) (sadly, no F1 score was mentioned, and since the dataset is imbalanced accuracy doesn't mean much). It still struggles on grades above V8, since the examples there are very limited, but overall performance is the best that I could find online. The classifier was then built into an ONXX compatible network, hosted on a web application using fly at https://moonboard-grade-predict.fly.dev/
 
-Additionally, due to the way I constructed the data, assuming the moonboard as an "image" of the board, with different channels corresponding to different types of holds, two additional models were built to try and better leverage the spatial properties within the data. These models were a simple shallow CNN, and a deeper ResNet style network, where skip connections allows for deep networks without vanishing or exploding gradients. In addition to these new models, slight label smoothing was used as an enhancement to the training loop, since the labels are noisy. The performance comparison is below (on the validation set), with the best performers in bold for each category:
+Additionally, due to the way I constructed the data, assuming the moonboard as an "image" of the board, with different channels corresponding to different types of holds, two additional models were built to try and better leverage the spatial properties within the data. These models were a simple shallow CNN, and a deeper ResNet style network, where skip connections allows for deep networks without vanishing or exploding gradients. In addition to these new models, slight label smoothing was used as an enhancement to the training loop, since the labels are noisy. This label smoothing was done with an (as far as I could find) original method, where the boundaries of ordinal labels are smoothed more significantly than non-boundary labels, providing a more generalized model that more smoothly interprets between ordinal labels. The performance comparison is below (on the testing set), with the best performers in bold for each category:
 
 | Model             | Exact Acc. | +-1 Acc. | Macro F1 Score | Weighted F1 Score |
 | :---------------: | :--------: | :------: | :------------: | :----------------:
-| MLP               |  55.61%    | 91.55%   | 0.4020         | 0.5617
-| Simple CNN        |  55.36%    | **93.24%** | 0.3875       | 0.5646
-| ResNet            |**59.85%**  | 92.20%   | **0.4228**     | **0.5908**
+| MLP               |  55.88%    | 91.27%   | 0.3980         | 0.5631
+| Simple CNN        |  56.05%    | **92.13%** | 0.4020       | 0.5706
+| ResNet            |**58.60%**  | 91.30%   | **0.4052**     | **0.5765**
 
 **Problem Generator: Variational Autoencoder (VAE)**
 
