@@ -21,7 +21,7 @@ Additionally, I implemented a deep Conditional Generative Adversarial Network (C
 **Repository Structure**
 
     grade_classifier.ipynb: Contains the implementation of the Multi-Layer Perceptron (MLP) model for route classification.   
-    VAE-route-gen.ipynb: Includes the code for the Variational Autoencoder (VAE) used to generate climbing problems.   
+    W-CGAN-GP-Board-Gen.ipynb: Includes the code for the GAN used to generate climbing problems.   
     preprocessor.ipynb: Scripts and notebooks for preprocessing the Moonboard dataset.   
     /Web_Interface: Web interface implementation for interacting with the models. (TODO)   
 
