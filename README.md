@@ -38,7 +38,8 @@ Requirements
 Contribution
 
 Contributions to improve the project are welcome! Feel free to fork this repository, make your enhancements, and create a pull request.   
-References
-https://cs230.stanford.edu/projects_spring_2020/reports/38850664.pdf
-https://arxiv.org/pdf/2311.12419.pdf
-https://arxiv.org/pdf/1901.10824.pdf
+
+References   
+https://cs230.stanford.edu/projects_spring_2020/reports/38850664.pdf   
+https://arxiv.org/pdf/2311.12419.pdf   
+https://arxiv.org/pdf/1901.10824.pdf   
