@@ -33,7 +33,7 @@ Requirements
     NumPy
     Pandas
     Matplotlib
-    Sklearn
+    Seaborn
 
 Contribution
 
